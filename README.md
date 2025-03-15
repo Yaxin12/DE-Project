@@ -11,10 +11,10 @@ Build an end-to-end data pipeline
 - [ ] Building a dashboard to visualize the data
 
 ## Data Pipeline
-* **Batch:**   run things periodically (e.g. hourly/daily)
+* **Batch:**   run things periodically (hourly/daily)
 
 ## Technologies
-
+I plan to use those tools:
 * **Cloud:**  GCP
 * **Infrastructure as code (IaC):**  Terraform
 * **Workflow orchestration:**  Airflow
@@ -24,6 +24,7 @@ Build an end-to-end data pipeline
 ## Dashboard
 
 ## Evaluation Criteria
+
 - [ ] Problem description
 
 - [ ]  Cloud
