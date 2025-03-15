@@ -1,4 +1,5 @@
 # DE-Project
+This is my project of DE.
 ## Goal
 Build an end-to-end data pipeline
 
@@ -51,10 +52,10 @@ Build an end-to-end data pipeline
     * 4 points: Instructions are clear, it's easy to run the code, and the code works
 
 ## Helpful Links
-* [Unit Tests + CI for Airflow] (https://www.astronomer.io/events/recaps/testing-airflow-to-bulletproof-your-code/)
-* [CI/CD for Airflow (with Gitlab & GCP state file)] (https://engineering.ripple.com/building-ci-cd-with-airflow-gitlab-and-terraform-in-gcp)
-* [CD for Terraform] (https://towardsdatascience.com/git-actions-terraform-for-data-engineers-scientists-gcp-aws-azure-448dc7c60fcc)
-* [Spark + Airflow] (https://medium.com/doubtnut/github-actions-airflow-for-automating-your-spark-pipeline-c9dff32686b)
+* [Unit Tests + CI for Airflow](https://www.astronomer.io/events/recaps/testing-airflow-to-bulletproof-your-code/)
+* [CI/CD for Airflow (with Gitlab & GCP state file)](https://engineering.ripple.com/building-ci-cd-with-airflow-gitlab-and-terraform-in-gcp)
+* [CD for Terraform](https://towardsdatascience.com/git-actions-terraform-for-data-engineers-scientists-gcp-aws-azure-448dc7c60fcc)
+* [Spark + Airflow](https://medium.com/doubtnut/github-actions-airflow-for-automating-your-spark-pipeline-c9dff32686b)
 
 
 Go! Make some cool stuff!!!
