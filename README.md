@@ -1,62 +1,46 @@
-# DE-Project
-This is my project of DE.
-## Goal
-Build an end-to-end data pipeline
+# 📊 Real-Time YouTube Analytics Pipeline (Data Engineering Zoomcamp 2025 Project)
 
-## Problem statement
-- [ ] Selecting a dataset of interest
-- [ ] Creating a pipeline for processing this dataset and putting it to a datalake
-- [ ] Creating a pipeline for moving the data from the lake to a data warehouse
-- [ ] Transforming the data in the data warehouse: prepare it for the dashboard
-- [ ] Building a dashboard to visualize the data
+This project is built as part of the **Data Engineering Zoomcamp 2025**. It implements an end-to-end real-time data pipeline that monitors YouTube activity (views, likes, comments) on a selected video list and streams it through Kafka for processing and analysis.
 
-## Data Pipeline
-* **Batch:**   run things periodically (hourly/daily)
+> ⚠️ **Note**: Telegram bot integration is currently not functional and will be addressed in future work.
 
-## Technologies
-I plan to use those tools:
-* **Cloud:**  GCP
-* **Infrastructure as code (IaC):**  Terraform
-* **Workflow orchestration:**  Airflow
-* **Data Warehouse:**  BigQuery
-* **Batch processing:** Spark
+---
 
-## Dashboard
+## 🚀 Project Overview
 
-## Evaluation Criteria
+This pipeline fetches video analytics from the YouTube API, streams it into Kafka topics, processes it with ksqlDB, and enables extensible integrations with external systems. The goal is to demonstrate real-time analytics capability using industry-grade tools and infrastructure.
 
-- [ ] Problem description
+---
 
-- [ ]  Cloud
-    * 2 points: The project is developed in the cloud
-    * 4 points: The project is developed in the cloud and IaC tools are used
+## 🛠 Technologies & Tools Used
 
-- [ ] Data ingestion
-    * Batch / Workflow orchestration
-        * 2 points: Partial workflow orchestration: some steps are orchestrated, some run manually
-        * 4 points: End-to-end pipeline: multiple steps in the DAG, uploading data to data lake
+| Tool/Tech | Purpose |
+|-----------|---------|
+| **Python** | Fetch data from YouTube API and push to Kafka |
+| **YouTube Data API v3** | Access video statistics and metadata |
+| **Docker + Docker Compose** | Containerize the full Kafka ecosystem |
+| **Apache Kafka** | Real-time messaging and data streaming |
+| **Kafka Connect** | External system integration (e.g., Telegram, future DB) |
+| **ksqlDB** | Real-time stream processing using SQL-like syntax |
+| **Google Cloud Console** | Set up API keys and manage quotas for YouTube API |
+| **Confluent Platform** | Kafka management, Control Center, Connectors |
 
-- [ ] Data warehouse
-    * 2 points: Tables are created in DWH, but not optimized
-    * 4 points: Tables are partitioned and clustered in a way that makes sense for the upstream queries (with explanation)
+---
 
-- [ ] Transformations (dbt, spark, etc)
-    * 2 points: Simple SQL transformation (no dbt or similar tools)
-    * 4 points: Tranformations are defined with dbt, Spark or similar technologies
+## 📌 Features
 
-- [ ] Dashboard 
-    * 2 points: A dashboard with 1 tile
-    * 4 points: A dashboard with 2 tiles
+- ✅ Real-time ingestion of YouTube video stats using Python
+- ✅ Kafka ecosystem setup via Docker Compose (Zookeeper, Kafka, Schema Registry, ksqlDB, Control Center)
+- ✅ Stream processing using ksqlDB (custom queries and filtering)
+- ✅ Modular and extensible design to connect with external systems
 
-- [ ] Reproducibility
-    * 2 points: Some instructions are there, but they are not complete
-    * 4 points: Instructions are clear, it's easy to run the code, and the code works
+---
 
-## Helpful Links
-* [Unit Tests + CI for Airflow](https://www.astronomer.io/events/recaps/testing-airflow-to-bulletproof-your-code/)
-* [CI/CD for Airflow (with Gitlab & GCP state file)](https://engineering.ripple.com/building-ci-cd-with-airflow-gitlab-and-terraform-in-gcp)
-* [CD for Terraform](https://towardsdatascience.com/git-actions-terraform-for-data-engineers-scientists-gcp-aws-azure-448dc7c60fcc)
-* [Spark + Airflow](https://medium.com/doubtnut/github-actions-airflow-for-automating-your-spark-pipeline-c9dff32686b)
+## 📈 Use Case
 
+I applied this pipeline to **analyze the video list from the [Data Engineering Zoomcamp 2025]**, enabling near real-time insights into audience interaction.
 
-Go! Make some cool stuff!!!
+---
+
+## 📂 Folder Structure
+
