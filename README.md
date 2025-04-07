@@ -56,12 +56,3 @@ I applied this pipeline to **analyze the video list from the [Data Engineering Z
 🔌 Integration with databases such as PostgreSQL or BigQuery
 
 📊 Visualization dashboards using tools like Grafana or Looker Studio
-
-# 📎 Resources & References
-📘 YouTube Data API
-
-🔌 Confluent Kafka Documentation
-
-🐍 kafka-python Docs
-
-💡 Based on airscholar's YouTube Real-Time Analytics Tutorial
