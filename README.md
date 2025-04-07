@@ -45,9 +45,15 @@ I applied this pipeline to **analyze the video list from the [Data Engineering Z
 ## 📂 Folder Structure
 ```bash
 ├── docker-compose.yml        # Setup Kafka ecosystem
-├── youtube_fetcher.py        # Fetch YouTube video data
-├── kafka_producer.py         # Push data to Kafka topic
-├── ksql/                     # ksqlDB queries for stream processing
+├── YoutubeAnalytics.py       # Fetch YouTube video data
 ├── config/                   # API keys and secrets
 └── README.md                 # Project documentation
 ```
+
+## 🔮 Future Work
+❌ Telegram Integration: Although initial steps were implemented (Telegram Bot setup), real-time alerts for significant YouTube events are not functional yet due to integration issues. This remains a priority for future development.
+
+🔌 Integration with databases such as PostgreSQL or BigQuery
+
+📊 Visualization dashboards using tools like Grafana or Looker Studio
+
