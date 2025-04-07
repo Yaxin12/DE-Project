@@ -22,7 +22,7 @@ This pipeline fetches video analytics from the YouTube API, streams it into Kafk
 | **Apache Kafka** | Real-time messaging and data streaming |
 | **Kafka Connect** | External system integration (e.g., Telegram, future DB) |
 | **ksqlDB** | Real-time stream processing using SQL-like syntax |
-| **Google Cloud Console** | Set up API keys and manage quotas for YouTube API |
+| **Google Cloud Platform** | Set up API keys and manage quotas for YouTube API |
 | **Confluent Platform** | Kafka management, Control Center, Connectors |
 
 ---
