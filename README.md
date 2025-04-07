@@ -44,4 +44,4 @@ I applied this pipeline to **analyze the video list from the [Data Engineering Z
 
 ## 📂 Folder Structure
 
-├── docker-compose.yml # Setup Kafka ecosystem ├── youtube_fetcher.py # Fetch YouTube video data ├── kafka_producer.py # Push data to Kafka topic ├── ksql/ # ksqlDB queries for stream processing ├── config/ # API keys and secrets └── README.md # Project documentation
+├── docker-compose.yml # Setup Kafka ecosystem ├── YoutubeAnalytics.py # Fetch YouTube video data ├── constants.py # Push data to Kafka topic ├── ksql/ # ksqlDB queries for stream processing ├── config/ # API keys and secrets └── README.md # Project documentation
