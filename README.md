@@ -66,7 +66,7 @@ This enables continuous monitoring of how engagement metrics evolve:
 
 <img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/4.png" width="600"/>
 
-As an example, we tracked the video [Data Engineering Zoomcamp 2025 Office Hours (Kestra)](https://www.youtube.com/watch?v=aBQulSpOgfY&t=574s). At first, the video had 67 likes (right after I clicked the like button). The change was immediately reflected in the Kafka stream and shown in the Confluent Platform.
+As an example, we tracked the video [Data Engineering Zoomcamp 2025 Office Hours (Kestra)](https://www.youtube.com/watch?v=aBQulSpOgfY&t=574s). At first, the video had 67 likes. The information was also reflected in the Kafka stream and shown in the Confluent Platform.
 
 <table> <tr> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/5.png" width="100%"/></td> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/6.png" width="100%"/></td> </tr> </table>
 Then, I clicked the like button again—and as expected, the like count updated in real-time:
