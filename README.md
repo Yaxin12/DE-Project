@@ -66,6 +66,20 @@ SELECT * from youtube_videos;
 ```
 #### Creat a stream, and let's take a look.
 ![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/2.png)
+We can get all the infromation of the playlist.
+Then, let's make a table to motor the change of each video in the palylist.
+```bash
+CREATE TABLE youtube_analytics_changes WITH(KAFKA_TOPIC='youtube_analytics_changes') AS SELECT video_id, latest_by_offset(title) as title, latest_by_offset(comments,2)[1] as comments_prev, latest_by_offset(comments,2)[2] as comments_curr, latest_by_offset(likes,2)[1] as likes_prev, latest_by_offset(likes,2)[2] as likes_curr, latest_by_offset(views,2)[1] as views_prev, latest_by_offset(views,2)[2] as views_curr, latest_by_offset(favorites,2)[1] as favorites_prev, latest_by_offset(favorites,2)[2] as favorites_curr FROM youtube_videos GROUP BY video_id EMIT CHANGES;
+```
+![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/4.png)
+
+Let's pick tha video Data Engineering Zoomcamp 2025 Office Hours (Kestra) as an example, as we can see the number of likes is 67 (I just concle the like, so the number is 67), and in the Confluent Platform we can also see the information of this video.
+![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/5.png)
+![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/6.png)
+If I click the likes again, you will see the change.
+![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/7.png)
+![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/8.png)
+
 ---
 
 ## 📂 Folder Structure
