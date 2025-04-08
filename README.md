@@ -68,10 +68,12 @@ This enables continuous monitoring of how engagement metrics evolve:
 
 As an example, we tracked the video [Data Engineering Zoomcamp 2025 Office Hours (Kestra)](https://www.youtube.com/watch?v=aBQulSpOgfY&t=574s). At first, the video had 67 likes. The information was also reflected in the Kafka stream and shown in the Confluent Platform.
 
+
 > ⚠️ **Note**: For testing purposes, I temporarily hit the "unlike" button—strictly for science, I swear! 😅 I promise I'll hit "like" again, because this course absolutely deserves it. It's genuinely great and totally worth a thumbs-up! 👍
 
+
 <table> <tr> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/5.png" width="100%"/></td> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/6.png" width="100%"/></td> </tr> </table>
-Then, I clicked the like button again—and as expected, the like count updated in real-time:
+Then, I clicked the like button again✅—and as expected, the like count updated in real-time:
 
 <table> <tr> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/7.png" width="100%"/></td> <td><img src="https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/8.png" width="100%"/></td> </tr> </table>
 
