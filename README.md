@@ -64,7 +64,7 @@ CREATE STREAM youtube_videos (
 
 SELECT * from youtube_videos;
 ```
-Creat a stream, and let's take a look.
+#### Creat a stream, and let's take a look.
 ![IMAGE ALT TEXT](https://github.com/Yaxin12/Real-Time-YouTube-Analytics-Pipeline-Data-Engineering-Zoomcamp-2025-Project-/blob/main/image/2.png)
 ---
 
