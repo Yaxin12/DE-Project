@@ -1,5 +1,6 @@
 # 📊 Real-Time YouTube Analytics Pipeline (Data Engineering Zoomcamp 2025 Project)
- [Data Engineering Zoomcamp 2025](https://www.youtube.com/watch?v=X8cEEwi8DTM&list=PL3MmuxUbc_hJZdpLpRHp7dg6EOx828q6y)
+
+[![IMAGE ALT TEXT](https://i.ytimg.com/vi/X8cEEwi8DTM/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCHMXvedNHuTfWxeUXhRUVacYUG3g)](https://www.youtube.com/watch?v=X8cEEwi8DTM&list=PL3MmuxUbc_hJZdpLpRHp7dg6EOx828q6y "Video Title")
 
 This project is built as part of the **Data Engineering Zoomcamp 2025**. It implements an end-to-end real-time data pipeline that monitors YouTube activity (views, likes, comments) on a selected video list and streams it through Kafka for processing and analysis.
 
