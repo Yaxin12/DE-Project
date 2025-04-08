@@ -50,19 +50,7 @@ This project demonstrates how to build a real-time analytics pipeline to monitor
 
 We first create a stream to capture raw video data:
 ```bash
-CREATE STREAM youtube_videos (
-  video_id VARCHAR KEY,
-  title VARCHAR,
-  likes INTEGER,
-  comments INTEGER,
-  views INTEGER,
-  favorites INTEGER,
-  thumbnail VARCHAR
-) WITH (
-  KAFKA_TOPIC = 'youtube_videos',
-  PARTITIONS = 1,
-  VALUE_FORMAT = 'JSON'
-);
+CREATE STREAM youtube_videos (video_id VARCHAR KEY,title VARCHAR,likes INTEGER,comments INTEGER,views INTEGER,favorites INTEGER,thumbnail VARCHAR) WITH (KAFKA_TOPIC = 'youtube_videos',PARTITIONS = 1,VALUE_FORMAT = 'JSON');
 
 SELECT * from youtube_videos;
 ```
