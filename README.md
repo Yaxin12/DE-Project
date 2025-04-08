@@ -9,7 +9,7 @@
 </div>
 
 
-This project is built as part of the **Data Engineering Zoomcamp 2025**. It implements an end-to-end real-time data pipeline that monitors YouTube activity (views, likes, comments) on a selected video list and streams it through Kafka for processing and analysis.
+This project implements an end-to-end real-time data pipeline that monitors YouTube video activity—such as views, likes, and comments—for Data Engineering Zoomcamp 2025[IMAGE ALT TEXT](https://www.youtube.com/watch?v=X8cEEwi8DTM&list=PL3MmuxUbc_hJZdpLpRHp7dg6EOx828q6y "Video Title") playlist. The data is streamed using Apache Kafka, enabling real-time processing and analytics.
 
 > ⚠️ **Note**: Telegram bot integration is currently not functional and will be addressed in future work.
 
