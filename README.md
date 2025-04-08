@@ -47,7 +47,23 @@ This pipeline fetches video analytics from the YouTube API, streams it into Kafk
 
 ## 📈 Use Case
 
-I applied this pipeline to **analyze the video list from the [Data Engineering Zoomcamp 2025]**, enabling near real-time insights into audience interaction.
+```bash
+CREATE STREAM youtube_videos (
+  video_id VARCHAR KEY,
+  title VARCHAR,
+  likes INTEGER,
+  comments INTEGER,
+  views INTEGER,
+  favorites INTEGER,
+  thumbnail VARCHAR
+) WITH (
+  KAFKA_TOPIC = 'youtube_videos',
+  PARTITIONS = 1,
+  VALUE_FORMAT = 'JSON'
+);
+
+SELECT * from youtube_videos;
+```
 
 ---
 
