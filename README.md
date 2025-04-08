@@ -83,8 +83,26 @@ Then, I clicked the like button again—and as expected, the like count updated 
 ```
 
 ## 🔮 Future Work
-❌ Telegram Integration: Although initial steps were implemented (Telegram Bot setup), real-time alerts for significant YouTube events are not functional yet due to integration issues. This remains a priority for future development.
+While this pipeline successfully demonstrates real-time monitoring of YouTube video engagement, there are several opportunities to improve its usability, scalability, and interactivity:
 
-🔌 Integration with databases such as PostgreSQL or BigQuery
+🔌 1. Integrate with External Systems via Kafka Connect
+Currently, the data stays within the Kafka ecosystem, which limits its accessibility for broader analytics or dashboarding. In future iterations, I plan to integrate Kafka Connect to stream data into external systems such as:
 
-📊 Visualization dashboards using tools like Grafana or Looker Studio
+PostgreSQL or BigQuery for advanced analytics and storage
+
+Elasticsearch for full-text search and visualizations via Kibana
+
+Data warehouses or BI tools for business-facing reporting
+
+This will make the pipeline more extensible and easier to integrate into enterprise environments.
+
+📲 2. Real-Time Notifications with Telegram
+To enhance interactivity and responsiveness, I plan to implement real-time alerts via Telegram. This will allow users to receive instant updates on key metrics (e.g., sudden spikes in views or likes, trending videos, or unusual comment activity) directly on their mobile devices.
+
+This feature will be particularly useful for:
+
+Content creators monitoring their own videos
+
+Marketing teams tracking campaign performance
+
+Educators or students following engagement on course-related playlists
